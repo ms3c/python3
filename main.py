@@ -3,13 +3,13 @@ Python is easy
 """
 
 def Song(SongName = "Tears always win"):
-  Output = SongName
-  return Output
-  
-print(Song())
+  SongOut = SongName
+  print(SongOut)
+Song()
+
   
 def SongArtist(Artist = "Alicia Keys"):
-  Output = Artist
-  return Output
-  
-print(SongArtist())
+  ArtOut = Artist
+  print(ArtOut)
+SongArtist()
+
