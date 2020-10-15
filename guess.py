@@ -8,12 +8,13 @@ def GuessGame():
   
     print(f'Welcome to Guess Game')
     
-    UserGuess = int(input('Enter Your Guess: '))
+    UserGuess = int(input(f'Enter Your Guess: '))
     return UserGuess
     
     def CheckGuess1():
       if UserGuess == SecretNum:
         print(f'Congratulations!!')
+        
     def CheckGuess2():
       elif UserGuess <= SecretNum:
         print(f'Too low!')
@@ -22,8 +23,14 @@ def GuessGame():
       elif UserGuess >= SecretNum:
         print(f'Too High!')
         
-  t1 = threading.thread(CheckGuess1)
-  t2 = threading.thread(CheckGuess2)
-  t3 = threading.thread(CheckGuess3)
+t1 = threading.Thread(target=CheckGuess1)
+t2 = threading.Thread(target=CheckGuess2)
+t3 = threading.Thread(target=CheckGuess3)
   
-  threading.start()
+t2.start()
+t2.start()
+t2.start()
+
+t2.join()
+t2.join()
+t2.join()
