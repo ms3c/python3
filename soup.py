@@ -1,5 +1,5 @@
 import os
-from ba4 import BeautifuSoup as bs
+from bs4 import BeautifuSoup as bs
 import requests as req
 
 ''' Uncomment the following lines after run the script for the first time'''
