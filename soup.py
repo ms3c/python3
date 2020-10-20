@@ -11,7 +11,7 @@ os.system("pip install python-html5lib")
 url = req.get('https://google.com')
 
 contents = url.content
-soup = bs(content, "lxml")
+soup = bs(contents, "lxml")
 
 finder = soup.find_all("a")
 print(finder)
