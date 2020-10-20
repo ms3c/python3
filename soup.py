@@ -4,9 +4,9 @@ import requests as req
 
 ''' Uncomment the following lines after run the script for the first time'''
 '''
-os.syste("pip install bs4")
-os.syste("pip python-lxml")
-os.syste("pip install python-html5lib")
+os.system("pip install bs4")
+os.system("pip python-lxml")
+os.system("pip install python-html5lib")
 '''
 url = req.get('https://google.com')
 
